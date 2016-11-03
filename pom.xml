@@ -9,7 +9,7 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.build.jdklevel>1.8</project.build.jdklevel>
+		<project.build.jdklevel>1.7</project.build.jdklevel>
 		<apache.httpclient.version>4.5.2</apache.httpclient.version>
 	</properties>
 	<build>

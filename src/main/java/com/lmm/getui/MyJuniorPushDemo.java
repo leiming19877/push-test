@@ -5,10 +5,10 @@ import com.gexin.rp.sdk.base.payload.APNPayload;
 import com.gexin.rp.sdk.http.IGtPush;
 import com.gexin.rp.sdk.template.APNTemplate;
 public class MyJuniorPushDemo {
-static String appId = "nSJtifqVSI7HkPrKHlxhD6";
-    static String appKey = "WlZGdJlcUB8ds32Y2Thn91";
-    static String masterSecret = "5vjiwMEaij5VvYf7VhlGM4";
-    static String devicetoken = "5b6f8c6cdc5ab8352a0f7357888308c17fe115d9d162c2a638ad336bc9f50f85";//iOS设备唯一标识，由苹果那边生成
+	private static String appId = "AiNHcCiJZT8Qq3GFdWCtU4";
+    private static String appKey = "fL9bHm48WH6q5gg1oP1S36";
+    private static String masterSecret = "xS60WE75lz5OXapODZ6es7";
+    static String devicetoken = "84A392CC0C8FA4058E38A4CA011FA249C0BAE43D599D0CAE2CFE6959EA36FDE8";//iOS设备唯一标识，由苹果那边生成
     static String url = "http://sdk.open.api.igexin.com/apiex.htm";
        public static void apnpush() throws Exception {
               IGtPush push = new IGtPush(url, appKey, masterSecret);  
