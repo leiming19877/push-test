@@ -17,9 +17,9 @@ import com.gexin.rp.sdk.template.TransmissionTemplate;
 
 public class PushtoSingleUser2 {
     //采用"Java SDK 快速入门"， "第二步 获取访问凭证 "中获得的应用配置，用户可以自行替换
-	private static String appId = "AiNHcCiJZT8Qq3GFdWCtU4";
-    private static String appKey = "fL9bHm48WH6q5gg1oP1S36";
-    private static String masterSecret = "xS60WE75lz5OXapODZ6es7";
+	private static String appId = "1PRoXK5wbx8j2cvJYhe277";
+    private static String appKey = "g6XWFKISYl70AkpDGd3BB2";
+    private static String masterSecret = "wM6XvozFxZ8NQONLimUIs7";
 
     //static String CID = "302176718d46ca72c3f62fa4b39dc126";
   //别名推送方式
@@ -58,7 +58,7 @@ public class PushtoSingleUser2 {
         TransmissionTemplate template = new TransmissionTemplate();
         template.setAppId(appId);
         template.setAppkey(appKey);
-  
+       
        // 透传消息设置，1为强制启动应用，客户端接收到消息后就会立即启动应用；2为等待应用启动
         template.setTransmissionType(2);
         //template.setTransmissionContent("请输入需要透传的内容");
@@ -73,16 +73,17 @@ public class PushtoSingleUser2 {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+        
         template.setTransmissionContent(content);
         APNPayload payload = new APNPayload();
-        payload.setBadge(1);
+        //payload.setBadge(1);
         payload.setContentAvailable(1);
         payload.setSound("default");
         payload.setCategory("$由客户端定义");
         //简单模式APNPayload.SimpleMsg 
-        payload.setAlertMsg(new APNPayload.SimpleAlertMsg("leiming"));
+        //payload.setAlertMsg(new APNPayload.SimpleAlertMsg("leiming"));
         //字典模式使用下者
-        //payload.setAlertMsg(getDictionaryAlertMsg());
+        payload.setAlertMsg(getDictionaryAlertMsg());
         template.setAPNInfo(payload);
         return template;
     }

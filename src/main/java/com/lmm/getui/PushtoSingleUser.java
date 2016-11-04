@@ -19,7 +19,7 @@ public class PushtoSingleUser {
     private static String appKey = "fL9bHm48WH6q5gg1oP1S36";
     private static String masterSecret = "xS60WE75lz5OXapODZ6es7";
 
-    //static String CID = "302176718d46ca72c3f62fa4b39dc126";
+    static String CID = "e9eb4008144a3933b74e9a8823a03131";
   //别名推送方式
    // static String Alias = "";
     static String host = "http://sdk.open.api.igexin.com/apiex.htm";

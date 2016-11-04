@@ -13,7 +13,7 @@ public class PushtoSingle {
     private static String appKey = "fL9bHm48WH6q5gg1oP1S36";
     private static String masterSecret = "xS60WE75lz5OXapODZ6es7";
 
-    static String CID = "317b6938447767ee761aa41cc42bc1a4";
+    static String CID = "e9eb4008144a3933b74e9a8823a03131";
   //别名推送方式
    // static String Alias = "";
     static String host = "http://sdk.open.api.igexin.com/apiex.htm";
@@ -30,8 +30,8 @@ public class PushtoSingle {
         message.setPushNetWorkType(0); 
         Target target = new Target();
         target.setAppId(appId);
-        target.setClientId(CID);
-        //target.setAlias(Alias);
+        //target.setClientId(CID);
+        target.setAlias("leiming");
         IPushResult ret = null;
         try {
             ret = push.pushMessageToSingle(message, target);
